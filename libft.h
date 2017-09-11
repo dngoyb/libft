@@ -6,7 +6,7 @@
 /*   By: ngbanza <marvin@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/22 17:34:43 by ngbanza           #+#    #+#             */
-/*   Updated: 2017/06/08 10:40:10 by ngbanza          ###   ########.fr       */
+/*   Updated: 2017/09/05 12:20:08 by ngbanza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,5 +83,10 @@ void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void				ft_swap(int *a, int *b);
+int					len_base(long long n, int base);
+char				*ft_itoa_base(long long nb, int base);
+char				*ft_itoa_base_cap(long long nb, int base);
+void				ft_putwchar(wchar_t wc);
+int					ft_putnchar(char c, int len);
 
 #endif
